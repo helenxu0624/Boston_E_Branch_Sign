@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boston E Branch Sign Catalog</title>
+<style>
+  :root {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f2933;
+    background: #f7f8fa;
+  }
+  body { margin: 0; }
+  header {
+    background: #102a43;
+    color: white;
+    padding: 28px 34px;
+  }
+  h1 { margin: 0 0 8px; font-size: 30px; letter-spacing: 0; }
+  .subtitle { margin: 0; color: #d9e2ec; font-size: 15px; line-height: 1.45; }
+  main { max-width: 1260px; margin: 0 auto; padding: 26px 22px 44px; }
+  .overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .metric {
+    background: white;
+    border: 1px solid #d9e2ec;
+    border-radius: 6px;
+    padding: 15px 16px;
+  }
+  .metric .count { display: block; font-size: 31px; font-weight: 700; line-height: 1; }
+  .metric .label { display: block; margin-top: 7px; color: #52606d; font-size: 13px; }
+  section {
+    background: white;
+    border: 1px solid #d9e2ec;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+  .section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 18px 20px;
+    border-top: 6px solid var(--accent);
+    border-bottom: 1px solid #e4e7eb;
+  }
+  h2 { margin: 0; font-size: 22px; }
+  .badge {
+    background: #eef2f7;
+    border-radius: 999px;
+    padding: 5px 10px;
+    font-weight: 700;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  .catalog-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background: #dcefd6;
+  }
+  th, td {
+    text-align: left;
+    vertical-align: middle;
+    padding: 9px 10px;
+    border: 1px solid #b8cdb2;
+    font-size: 15px;
+  }
+  th {
+    background: #2f7520;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  tbody tr:last-child td { border-bottom: 0; }
+  .category-cell {
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    font-size: 19px;
+    background: #dcefd6;
+  }
+  .count-cell { text-align: right; font-variant-numeric: tabular-nums; }
+  .sample {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    text-align: center;
+  }
+  .sample img {
+    width: 160px;
+    height: 130px;
+    object-fit: contain;
+    background: #f5f7fa;
+    border: 1px solid #d9e2ec;
+    border-radius: 4px;
+    display: block;
+  }
+  .photo-name { font-weight: 700; font-size: 13px; overflow-wrap: anywhere; color: #1f2933; }
+  .detail-name { font-weight: 700; color: #000; }
+  @media (max-width: 720px) {
+    main { padding-left: 14px; padding-right: 14px; }
+    .catalog-table { table-layout: auto; }
+    .sample img { width: 110px; height: 92px; }
+    th, td { font-size: 13px; padding: 8px; }
+    .category-cell { font-size: 15px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Boston E Branch Sign Catalog</h1>
+  <p class="subtitle">Catalog grouped by transit category, with detail-level counts and one sample image for each sign type. Built from sign_catalog_table.csv.</p>
+</header>
+<main>
+
+<div class="overview">
+<div class="metric"><span class="count">48</span><span class="label">Total signs</span></div>
+<div class="metric"><span class="count">17</span><span class="label">Greenline</span></div>
+<div class="metric"><span class="count">7</span><span class="label">Bus</span></div>
+<div class="metric"><span class="count">24</span><span class="label">Other</span></div>
+</div>
+<section style="--accent:#1f7a4d">
+<div class="section-head"><h2>Greenline</h2><span class="badge">17 signs</span></div>
+<table class="catalog-table"><colgroup><col style="width:17%"><col style="width:9%"><col style="width:26%"><col style="width:8%"><col style="width:40%"></colgroup><thead><tr><th>Transit_category</th><th>Count</th><th>Details</th><th>Count</th><th>Sample</th></tr></thead><tbody>
+<tr>
+<td class="category-cell" rowspan="7">Greenline</td><td class="count-cell" rowspan="7">17</td>
+<td class="detail-name">Do_Not_Pass_Trolley</td>
+<td class="count-cell">6</td>
+<td>
+  <div class="sample">
+    <img src="https://raw.githubusercontent.com/helenxu0624/Boston_E_Branch_Sign/main/Pole5_Sign1.jpg" alt="Pole5_Sign1.jpg">
+    <div class="photo-name">Pole5_Sign1.jpg</div>
+  </div>
+</td>
+</tr>
+<tr>
+
+<td class="detail-name">Greenline Stop Sign</td>
+<td class="count-cell">1</td>
+<td>
+  <div class="sample">
+    <img src="https://raw.githubusercontent.com/helenxu0624/Boston_E_Branch_Sign/main/Pole1_Sign1.jpg" alt="Pole1_Sign1.jpg">
+    <div class="photo-name">Pole1_Sign1.jpg</div>
+  </div>
+</td>
+</tr>
+<tr>
+
+<td class="detail-name">Greenline_Stop_Sign</td>
+<td class="count-cell">4</td>
+<td>
+  <div class="sample">
+    <img src="https://raw.githubusercontent.com/helenxu0624/Boston_E_Branch_Sign/main/Pole10_Sign1.jpg" alt="Pole10_Sign1.jpg">
+    <div class="photo-name">Pole10_Sign1.jpg</div>
+  </div>
+</td>
+</tr>
+<tr>
+
+<td class="detail-name">Law_No_Pass_Trolley</td>
+<td class="count-cell">2</td>
+<td>
+  <div class="sample">
+    <img src="https://raw.githubusercontent.com/helenxu0624/Boston_E_Branch_Sign/main/Pole6_Sign5.jpg" alt="Pole6_Sign5.jpg">
+    <div class="photo-name">Pole6_Sign5.jpg</div>
+  </div>
+</td>
+</tr>
+<tr>
+
+<td class="detail-name">Track_Slippery</td>
+<td class="count-cell">2</td>
+<td>
+  <div class="sample">
+    <img src="https://raw.githubusercontent.com/helenxu0624/Boston_E_Branch_Sign/main/Pole2_Sign1.jpg" alt="Pole2_Sign1.jpg">
+    <div class="photo-name">Pole2_Sign1.jpg</div>
+  </div>
+</td>
+</tr>
+<tr>
+
+<td class="detail-name">Vertical_Clearance</td>
+<td class="count-cell">1</td>
+<td>
+  <div class="sample">
+    <img src="https://raw.githubusercontent.com/helenxu0624/Boston_E_Branch_Sign/main/Pole3_Sign1.jpg" alt="Pole3_Sign1.jpg">
+    <div class="photo-name">Pole3_Sign1.jpg</div>
+  </div>
+</td>
+</tr>
+<tr>
+
+<td class="detail-name">Yield_Trolley</td>
+<td class="count-cell">1</td>
+<td>
+  <div class="sample">
+    <img src="https://raw.githubusercontent.com/helenxu0624/Boston_E_Branch_Sign/main/Pole6_Sign1.jpg" alt="Pole6_Sign1.jpg">
+    <div class="photo-name">Pole6_Sign1.jpg</div>
+  </div>
+</td>
+</tr>
+</tbody></table>
+</section>
+<section style="--accent:#1f4e79">
+<div class="section-head"><h2>Bus</h2><span class="badge">7 signs</span></div>
+<table class="catalog-table"><colgroup><col style="width:17%"><col style="width:9%"><col style="width:26%"><col style="width:8%"><col style="width:40%"></colgroup><thead><tr><th>Transit_category</th><th>Count</th><th>Details</th><th>Count</th><th>Sample</th></tr></thead><tbody>
+<tr>
+<td class="category-cell" rowspan="3">Bus</td><td class="count-cell" rowspan="3">7</td>
+<td class="detail-name">Bus_Stop</td>
+<td class="count-cell">5</td>
+<td>
+  <div class="sample">
+    <img src="https://raw.githubusercontent.com/helenxu0624/Boston_E_Branch_Sign/main/Pole8_Sign1.jpg" alt="Pole8_Sign1.jpg">
+    <div class="photo-name">Pole8_Sign1.jpg</div>
+  </div>
+</td>
+</tr>
+<tr>
+
+<td class="detail-name">Bus_Stop_Tow</td>
+<td class="count-cell">1</td>
+<td>
+  <div class="sample">
+    <img src="https://raw.githubusercontent.com/helenxu0624/Boston_E_Branch_Sign/main/Pole11_Sign1.jpg" alt="Pole11_Sign1.jpg">
+    <div class="photo-name">Pole11_Sign1.jpg</div>
+  </div>
+</td>
+</tr>
+<tr>
+
+<td class="detail-name">Tow_Zone_Bus</td>
+<td class="count-cell">1</td>
+<td>
+  <div class="sample">
+    <img src="https://raw.githubusercontent.com/helenxu0624/Boston_E_Branch_Sign/main/Pole4_Sign1.jpg" alt="Pole4_Sign1.jpg">
+    <div class="photo-name">Pole4_Sign1.jpg</div>
+  </div>
+</td>
+</tr>
+</tbody></table>
+</section>
+<section style="--accent:#59636e">
+<div class="section-head"><h2>Other</h2><span class="badge">24 signs</span></div>
+<table class="catalog-table"><colgroup><col style="width:17%"><col style="width:9%"><col style="width:26%"><col style="width:8%"><col style="width:40%"></colgroup><thead><tr><th>Transit_category</th><th>Count</th><th>Details</th><th>Count</th><th>Sample</th></tr></thead><tbody>
+<tr>
+<td class="category-cell" rowspan="11">Other</td><td class="count-cell" rowspan="11">24</td>
+<td class="detail-name">Access Restriction</td>
+<td class="count-cell">1</td>
+<td>
+  <div class="sample">
+    <img src="https://raw.githubusercontent.com/helenxu0624/Boston_E_Branch_Sign/main/Pole27_Sign2.jpg" alt="Pole27_Sign2.jpg">
+    <div class="photo-name">Pole27_Sign2.jpg</div>
+  </div>
+</td>
+</tr>
+<tr>
+
+<td class="detail-name">Left_Lane</td>
+<td class="count-cell">2</td>
+<td>
+  <div class="sample">
+    <img src="https://raw.githubusercontent.com/helenxu0624/Boston_E_Branch_Sign/main/Pole17_Sign1.jpg" alt="Pole17_Sign1.jpg">
+    <div class="photo-name">Pole17_Sign1.jpg</div>
+  </div>
+</td>
+</tr>
+<tr>
+
+<td class="detail-name">N/A</td>
+<td class="count-cell">3</td>
+<td>
+  <div class="sample">
+    <img src="https://raw.githubusercontent.com/helenxu0624/Boston_E_Branch_Sign/main/Pole6_Sign2.jpg" alt="Pole6_Sign2.jpg">
+    <div class="photo-name">Pole6_Sign2.jpg</div>
+  </div>
+</td>
+</tr>
+<tr>
+
+<td class="detail-name">Private_Property</td>
+<td class="count-cell">1</td>
+<td>
+  <div class="sample">
+    <img src="https://raw.githubusercontent.com/helenxu0624/Boston_E_Branch_Sign/main/Pole28_Sign1.jpg" alt="Pole28_Sign1.jpg">
+    <div class="photo-name">Pole28_Sign1.jpg</div>
+  </div>
+</td>
+</tr>
+<tr>
+
+<td class="detail-name">Resident_Parking</td>
+<td class="count-cell">1</td>
+<td>
+  <div class="sample">
+    <img src="https://raw.githubusercontent.com/helenxu0624/Boston_E_Branch_Sign/main/Pole27_Sign1.jpg" alt="Pole27_Sign1.jpg">
+    <div class="photo-name">Pole27_Sign1.jpg</div>
+  </div>
+</td>
+</tr>
+<tr>
+
+<td class="detail-name">Right_Lane</td>
+<td class="count-cell">1</td>
+<td>
+  <div class="sample">
+    <img src="https://raw.githubusercontent.com/helenxu0624/Boston_E_Branch_Sign/main/Pole5_Sign2.jpg" alt="Pole5_Sign2.jpg">
+    <div class="photo-name">Pole5_Sign2.jpg</div>
+  </div>
+</td>
+</tr>
+<tr>
+
+<td class="detail-name">Street_Cleaning</td>
+<td class="count-cell">5</td>
+<td>
+  <div class="sample">
+    <img src="https://raw.githubusercontent.com/helenxu0624/Boston_E_Branch_Sign/main/Pole1_Sign2.jpg" alt="Pole1_Sign2.jpg">
+    <div class="photo-name">Pole1_Sign2.jpg</div>
+  </div>
+</td>
+</tr>
+<tr>
+
+<td class="detail-name">Tow_Warning</td>
+<td class="count-cell">1</td>
+<td>
+  <div class="sample">
+    <img src="https://raw.githubusercontent.com/helenxu0624/Boston_E_Branch_Sign/main/Pole27_Sign3.jpg" alt="Pole27_Sign3.jpg">
+    <div class="photo-name">Pole27_Sign3.jpg</div>
+  </div>
+</td>
+</tr>
+<tr>
+
+<td class="detail-name">Tow_Zone</td>
+<td class="count-cell">3</td>
+<td>
+  <div class="sample">
+    <img src="https://raw.githubusercontent.com/helenxu0624/Boston_E_Branch_Sign/main/Pole21_Sign1.jpg" alt="Pole21_Sign1.jpg">
+    <div class="photo-name">Pole21_Sign1.jpg</div>
+  </div>
+</td>
+</tr>
+<tr>
+
+<td class="detail-name">Tow_Zone_Parking</td>
+<td class="count-cell">1</td>
+<td>
+  <div class="sample">
+    <img src="https://raw.githubusercontent.com/helenxu0624/Boston_E_Branch_Sign/main/Pole14_Sign1.jpg" alt="Pole14_Sign1.jpg">
+    <div class="photo-name">Pole14_Sign1.jpg</div>
+  </div>
+</td>
+</tr>
+<tr>
+
+<td class="detail-name">Tow_Zone_Snow</td>
+<td class="count-cell">5</td>
+<td>
+  <div class="sample">
+    <img src="https://raw.githubusercontent.com/helenxu0624/Boston_E_Branch_Sign/main/Pole3_Sign2.jpg" alt="Pole3_Sign2.jpg">
+    <div class="photo-name">Pole3_Sign2.jpg</div>
+  </div>
+</td>
+</tr>
+</tbody></table>
+</section>
+</main></body></html>
